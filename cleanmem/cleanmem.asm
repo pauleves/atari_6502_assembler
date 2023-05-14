@@ -1,4 +1,4 @@
-    processor 6502
+    PROCESSOR 6502
 
     SEG code
     ORG $F000       ; Define the code origin at $F000
