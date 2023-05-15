@@ -8,6 +8,8 @@ Start:
     STA $80; Store the value in the A register into memory address $80
     STX $81; Store the value in the X register into memory address $81
 
+    JMP Start;
+
     ORG $FFFC ; End the ROM by adding required values to memory position $FFFC
     .word Start ; Put 2 bytes with the reset address at memory position $FFFC
     .word Start ; Put 2 bytes with the break address at memory position $FFFE

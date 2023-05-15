@@ -7,6 +7,8 @@ Start:
     LDX #82
     LDY $82
 
+    JMP Start;
+
     ORG $FFFC
     .word Start     ; Reset vector at $FFFC (Where the program starts)
     .word Start     ; Interrupt vector at $FFFE (unused in the VCS)
